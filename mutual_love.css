@@ -1,7 +1,84 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(cyan, rgb(255, 73, 73));
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1ff;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(lightgreen, orange);
+}
+
+
+header {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* Vertically centers the content */
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Image styling */
+.image img {
+    max-width: 75%;
+    /* Makes the image responsive */
+    height: auto;
+    border-radius: 8px;
+    padding-left: 13%;
+}
+
+/* Text styling */
+.text {
+    margin-left: 20px;
+    width: 70%;
+
+    /* Space between image and text */
+}
+
+.text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.3em;
+    color: #555;
+}
+
+.video-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 8px;
+}
