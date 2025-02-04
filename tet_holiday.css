@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,62 +6,75 @@
 
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-image: linear-gradient(cyan, rgb(255, 73, 73));
     border-radius: 10px;
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar-track {
     background-color: #f1f1f1ff;
     border-radius: 10px;
 }
-body::-webkit-scrollbar-thumb:hover{
+
+body::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(lightgreen, orange);
 }
 
 
-header{
+header {
     margin-bottom: 15px;
     justify-content: center;
     margin-top: 10px;
 }
 
-
-
-h2{
-    color: crimson;
-    padding: 10px;
-    margin-bottom: 2px;
-    background-color: yellow;
-    width: 550px;
-
+.container {
+    display: flex;
+    align-items: center;
+    /* Vertically centers the content */
+    justify-content: flex-start;
+    padding: 20px;
 }
 
-p{
-    color: black;
-    padding: 5px;
-    margin-bottom: 2px;
-    background-color: red;
-    width: 600px;
-}
-
-img{
-    width: 350px;
+/* Image styling */
+.image img {
+    max-width: 75%;
+    /* Makes the image responsive */
     height: auto;
-
-    
+    border-radius: 8px;
+    padding-left: 13%;
 }
 
-.content{
-    width: 50%;
-    background-color: gray;
-
-    
+/* Text styling */
+.text {
+    margin-left: 20px;
+    /* Space between image and text */
 }
 
-.media{
-    width: 45%;
-    float: left;
+.text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.video-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 8px;
 }
